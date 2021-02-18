@@ -60,13 +60,16 @@
     <Compile Include="Activities\LoaderActivity.cs" />
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Activities\SplashActivity.cs" />
-    <Compile Include="Adapters\TractorAdapter.cs" />
+    <Compile Include="Adapters\BaseAdapter.cs" />
+    <Compile Include="Adapters\BrandsAdapter.cs" />
     <Compile Include="Adapters\TractorRecyclerAdapter.cs" />
     <Compile Include="App.cs" />
     <Compile Include="AppModule.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="Fragments\BaseFragment.cs" />
+    <Compile Include="Fragments\BrandsFragment.cs" />
     <Compile Include="Fragments\TractorGalleryFragment.cs" />
+    <Compile Include="Interfaces\Holders\IBrandHolder.cs" />
     <Compile Include="Interfaces\Holders\ITractorHolder.cs" />
     <Compile Include="MainApplication.cs" />
     <Compile Include="Models\DBItem.cs" />
@@ -86,6 +89,7 @@
     <Compile Include="Services\TractorService.cs" />
     <Compile Include="Utils\TractorUtils.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\BrandsViewModel.cs" />
     <Compile Include="ViewModels\TracorGalleryViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

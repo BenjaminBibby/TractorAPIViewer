@@ -15,7 +15,7 @@ namespace TractorAPIViewer.Models.Tractor
 {
     public class Brand : DBItem
     {
-        [JsonProperty("name")]
+        [JsonProperty("brand")]
         public string Name { get; set; }
     }
 }

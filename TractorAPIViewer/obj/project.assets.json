@@ -1054,11 +1054,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\benja\\Desktop\\Bibby\\Xamarin\\TractorAPIViewer\\TractorAPIViewer\\TractorAPIViewer.csproj",
+      "projectUniqueName": "C:\\Users\\benja\\Desktop\\Bibby\\Xamarin\\TractorAPICopy\\TractorAPIViewer\\TractorAPIViewer.csproj",
       "projectName": "TractorAPIViewer",
-      "projectPath": "C:\\Users\\benja\\Desktop\\Bibby\\Xamarin\\TractorAPIViewer\\TractorAPIViewer\\TractorAPIViewer.csproj",
+      "projectPath": "C:\\Users\\benja\\Desktop\\Bibby\\Xamarin\\TractorAPICopy\\TractorAPIViewer\\TractorAPIViewer.csproj",
       "packagesPath": "C:\\Users\\benja\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\benja\\Desktop\\Bibby\\Xamarin\\TractorAPIViewer\\TractorAPIViewer\\obj\\",
+      "outputPath": "C:\\Users\\benja\\Desktop\\Bibby\\Xamarin\\TractorAPICopy\\TractorAPIViewer\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

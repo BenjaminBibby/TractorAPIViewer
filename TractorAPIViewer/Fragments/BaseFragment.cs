@@ -59,15 +59,26 @@ namespace TractorAPIViewer.Fragments
     public class BaseFragment<T> : BaseFragment where T : BaseViewModel
     {
         protected readonly T vm;
+        protected int _resourceId;
 
-        public BaseFragment()
+        public BaseFragment(int resourceId)
         {
             vm = App.Container.Get<T>();
+            _resourceId = resourceId;
         }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            return base.OnCreateView(inflater, container, savedInstanceState);
+            var view = inflater.Inflate(_resourceId, container, false);
+
+            CreateView(view);
+
+            return view;
+        }
+
+        protected virtual void CreateView(View view)
+        { 
+            // Override this
         }
 
         public override void OnResume()

@@ -23,7 +23,7 @@ namespace TractorAPIViewer.Fragments
         private TractorRecyclerAdapter _adapter;
         private LinearLayoutManager _layoutManager;
 
-        public TractorGalleryFragment() : base()
+        public TractorGalleryFragment() : base(Resource.Layout.fragment_tractor_gallery)
         {
         }
 
@@ -34,19 +34,15 @@ namespace TractorAPIViewer.Fragments
             // Create your fragment here
         }
 
-        public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+        protected override void CreateView(View view)
         {
-            var view = inflater.Inflate(Resource.Layout.fragment_tractor_gallery, container, false);
-            // Use this to return your custom view for this Fragment
-            // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
+            base.CreateView(view);
 
             _recyclerView = view.FindViewById<RecyclerView>(Resource.Id.rv_tractors);
             _adapter = new TractorRecyclerAdapter(vm);
             _recyclerView.SetAdapter(_adapter);
             _layoutManager = new LinearLayoutManager(Activity);
             _recyclerView.SetLayoutManager(_layoutManager);
-
-            return view;
         }
 
         public override void OnResume()

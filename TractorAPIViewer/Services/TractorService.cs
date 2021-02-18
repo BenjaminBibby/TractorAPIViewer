@@ -21,9 +21,10 @@ namespace TractorAPIViewer.Services
 
         }
 
-        public Task<IEnumerable<Brand>> GetTractorBrandsAsync()
+        public async Task<IEnumerable<Brand>> GetTractorBrandsAsync()
         {
-            throw new NotImplementedException();
+            var brands = await BaseService.Instance.Get<ItemCollection<Brand>>(Constants.BrandsUrl + $"&id=8");
+            return brands.Items;
         }
 
         /// <summary>

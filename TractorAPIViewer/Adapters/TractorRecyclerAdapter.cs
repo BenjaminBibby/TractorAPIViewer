@@ -10,17 +10,7 @@ namespace TractorAPIViewer.Adapters
 {
     class TractorRecyclerAdapter : RecyclerView.Adapter
     {
-        //public event EventHandler<TractorRecyclerAdapterClickEventArgs> ItemClick;
-        //public event EventHandler<TractorRecyclerAdapterClickEventArgs> ItemLongClick;
-        //string[] items;
-
         ITractorHolder _holder;
-
-        //public TractorRecyclerAdapter(string[] data)
-        //{
-        //    items = data;
-        //}
-
         public TractorRecyclerAdapter(ITractorHolder holder)
         {
             _holder = holder;
@@ -48,14 +38,13 @@ namespace TractorAPIViewer.Adapters
             var holder = viewHolder as TractorRecyclerAdapterViewHolder;
             holder.Tractor = item;
             holder.TvTitle.Text = item.InfoFormatted;
-            //holder.TextView.Text = items[position];
         }
 
-        public override int ItemCount => _holder.VisibleTractors?.Count() ?? 0; // items.Length;
+        public override int ItemCount => _holder.VisibleTractors?.Count() ?? 0;
 
         public Tractor GetEntry(int position) => _holder?.VisibleTractors?.ElementAt(position);
 
-        void OnClick(Tractor tractor) => _holder?.TractorClicked(tractor);//ItemClick?.Invoke(this, args);
+        void OnClick(Tractor tractor) => _holder?.TractorClicked(tractor);
     }
 
     public class TractorRecyclerAdapterViewHolder : RecyclerView.ViewHolder

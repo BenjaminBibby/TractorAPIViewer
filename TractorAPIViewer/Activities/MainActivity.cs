@@ -30,7 +30,7 @@ namespace TractorAPIViewer
             CheckForPermission(Android.Manifest.Permission.Internet);
 
             if (savedInstanceState == null)
-                Navigate(new TractorGalleryFragment());
+                Navigate(new BrandsFragment());
         }
 
         private void CheckForPermission(string permission)
