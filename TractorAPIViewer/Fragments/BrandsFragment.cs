@@ -68,7 +68,8 @@ namespace TractorAPIViewer.Fragments
             if (brand is null)
                 return;
 
-            Navigate(new TractorGalleryFragment());
+            if(brand.Id != null)
+                Navigate(new SeriesFragment(brand.Id.Value));
         }
     }
 }

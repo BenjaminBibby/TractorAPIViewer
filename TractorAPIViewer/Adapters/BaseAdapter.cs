@@ -24,9 +24,6 @@ namespace TractorAPIViewer.Adapters
         {
             View itemView = LayoutInflater.From(parent.Context).Inflate(_resourceId, parent, false);
 
-            //var vh = new BaseAdapterViewHolder<T>(itemView, OnClick, OnLongClick) as VH;
-            //var vh = BaseAdapterViewHolder<T>.CreateViewHolder<VH>(itemView, OnClick, OnLongClick);//BaseAdapterViewHolder<T>() { ItemView = itemView };
-            //vh.Setup(itemView, OnClick, OnLongClick);
             var vh = CreateViewHolder(itemView, OnClick, OnLongClick); 
             return vh;
         }
@@ -66,21 +63,6 @@ namespace TractorAPIViewer.Adapters
             Action<T> longClickListener = null) : base(itemView)
         {
             ItemView = itemView;
-            itemView.Click += (sender, e) => clickListener(_value);
-            itemView.LongClick += (sender, e) => longClickListener(_value);
-        }
-
-        public static VH CreateViewHolder<VH>(
-            View itemView, 
-            Action<T> clickListener = null, 
-            Action<T> longClickListener = null
-            ) where VH : BaseAdapterViewHolder<T>
-        {
-            return new BaseAdapterViewHolder<T>(itemView, clickListener, longClickListener) as VH;
-        }
-
-        public virtual void Setup(View itemView, Action<T> clickListener = null, Action<T> longClickListener = null)
-        {
             itemView.Click += (sender, e) => clickListener(_value);
             itemView.LongClick += (sender, e) => longClickListener(_value);
         }

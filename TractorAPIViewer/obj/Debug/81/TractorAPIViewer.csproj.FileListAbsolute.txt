@@ -505,3 +505,6 @@ C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\8
 C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\stamp\_GenerateJavaStubs.stamp
 C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\android\src\crc641b2e3ca20c468b10\SeriesAdapter.java
+C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\android\src\crc641b2e3ca20c468b10\SeriesViewHolder.java
+C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\android\src\crc645942c3934b5e66f2\SeriesFragment.java

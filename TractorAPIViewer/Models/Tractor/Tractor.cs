@@ -34,7 +34,7 @@ namespace TractorAPIViewer.Models.Tractor
         public string Category { get; set; }
 
         [JsonProperty("pto_rpm")]
-        public int PTO { get; set; }
+        public int? PTO { get; set; }
 
         [JsonProperty("awd")]
         public string AllWheelDrive { get; set; }

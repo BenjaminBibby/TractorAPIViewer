@@ -20,5 +20,6 @@ namespace TractorAPIViewer
 
         public static string TractorUrl => $@"{BaseUrl}products/read.php?cat=tractor&key={ApiKey}";
         public static string BrandsUrl => $@"{BaseUrl}products/read.php?cat=brand&key={ApiKey}";
+        public static string SeriesUrl => $@"{BaseUrl}products/read.php?cat=series&key={ApiKey}";
     }
 }

@@ -28,9 +28,12 @@ namespace TractorAPIViewer
             // ViewModels
             Bind<BaseViewModel>().ToSelf().InSingletonScope();
             Bind<TracorGalleryViewModel>().ToSelf().InSingletonScope();
+            Bind<BrandsViewModel>().ToSelf().InSingletonScope();
+            Bind<SeriesViewModel>().ToSelf().InSingletonScope();
 
             // Service bindings
             Bind<ITractorService>().To<TractorService>();
+            Bind<ISeriesService>().To<SeriesService>();
         }
     }
 }

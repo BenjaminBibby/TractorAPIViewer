@@ -15,7 +15,11 @@ namespace TractorAPIViewer.Services.Interfaces
 {
     public interface ITractorService
     {
-        Task<IEnumerable<Tractor>> GetTractorsAsync(int brandId);
+        Task<IEnumerable<Tractor>> GetTractorsAsync(int seriesId);
+
+        Task<IEnumerable<Tractor>> GetTractorsFromSeriesAsync(int seriesId);
+        
+        Task<IEnumerable<Tractor>> GetTractorsFromBrandAsync(int brandId);
 
         Task<Tractor> GetTractorAsync(int id);
 

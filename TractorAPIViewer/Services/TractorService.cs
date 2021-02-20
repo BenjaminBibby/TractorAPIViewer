@@ -1,14 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using TractorAPIViewer.Models.Tractor;
 using TractorAPIViewer.Services.Interfaces;
 
@@ -18,12 +11,11 @@ namespace TractorAPIViewer.Services
     {
         public TractorService()
         {
-
         }
 
         public async Task<IEnumerable<Brand>> GetTractorBrandsAsync()
         {
-            var brands = await BaseService.Instance.Get<ItemCollection<Brand>>(Constants.BrandsUrl + $"&id=8");
+            var brands = await BaseService.Instance.Get<ItemCollection<Brand>>(Constants.BrandsUrl + @$"&id=8");
             return brands.Items;
         }
 
@@ -33,7 +25,7 @@ namespace TractorAPIViewer.Services
         /// <returns></returns>
         public async Task<Tractor> GetTractorAsync(int id)
         {
-            var tractor = await BaseService.Instance.Get<ItemCollection<Tractor>>(Constants.TractorUrl + $"&id={id}");
+            var tractor = await BaseService.Instance.Get<ItemCollection<Tractor>>(Constants.TractorUrl + @$"&id={id}");
             return tractor.Items.FirstOrDefault();
         }
 
@@ -41,9 +33,21 @@ namespace TractorAPIViewer.Services
         /// Get all tractors from API
         /// </summary>
         /// <returns></returns>
-        public async Task<IEnumerable<Tractor>> GetTractorsAsync(int brandId)
+        public async Task<IEnumerable<Tractor>> GetTractorsAsync(int seriesId)
         {
-            var tractors = await BaseService.Instance.Get<ItemCollection<Tractor>>(Constants.TractorUrl + $"&sr={brandId}");
+            var tractors = await BaseService.Instance.Get<ItemCollection<Tractor>>(Constants.TractorUrl + $"&sr={seriesId}");
+            return tractors.Items;
+        }
+
+        public async Task<IEnumerable<Tractor>> GetTractorsFromSeriesAsync(int seriesId)
+        {
+            var tractors = await BaseService.Instance.Get<ItemCollection<Tractor>>(Constants.TractorUrl + $"&sr={seriesId}");
+            return tractors.Items;
+        }
+
+        public async Task<IEnumerable<Tractor>> GetTractorsFromBrandAsync(int brandId)
+        {
+            var tractors = await BaseService.Instance.Get<ItemCollection<Tractor>>(Constants.TractorUrl + $"&b={brandId}");
             return tractors.Items;
         }
     }

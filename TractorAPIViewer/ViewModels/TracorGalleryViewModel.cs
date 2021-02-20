@@ -53,7 +53,7 @@ namespace TractorAPIViewer.ViewModels
             }
         }
 
-        public async Task<IEnumerable<Tractor>> GetTractorsAsync(int brandId)
+        public async Task<IEnumerable<Tractor>> GetTractorsAsync(int seriesId)
         {
             try
             {
@@ -62,7 +62,7 @@ namespace TractorAPIViewer.ViewModels
                 if (this.TractorService == null)
                     return null;
 
-                var tractors = await this.TractorService.GetTractorsAsync(brandId);
+                var tractors = await this.TractorService.GetTractorsFromSeriesAsync(seriesId);
                 OnTractorsFetched(tractors);
                 return tractors;
             }

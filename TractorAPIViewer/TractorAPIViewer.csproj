@@ -62,20 +62,24 @@
     <Compile Include="Activities\SplashActivity.cs" />
     <Compile Include="Adapters\BaseAdapter.cs" />
     <Compile Include="Adapters\BrandsAdapter.cs" />
+    <Compile Include="Adapters\SeriesAdapter.cs" />
     <Compile Include="Adapters\TractorRecyclerAdapter.cs" />
     <Compile Include="App.cs" />
     <Compile Include="AppModule.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="Fragments\BaseFragment.cs" />
     <Compile Include="Fragments\BrandsFragment.cs" />
+    <Compile Include="Fragments\SeriesFragment.cs" />
     <Compile Include="Fragments\TractorGalleryFragment.cs" />
     <Compile Include="Interfaces\Holders\IBrandHolder.cs" />
+    <Compile Include="Interfaces\Holders\ISeriesHolder.cs" />
     <Compile Include="Interfaces\Holders\ITractorHolder.cs" />
     <Compile Include="MainApplication.cs" />
     <Compile Include="Models\DBItem.cs" />
     <Compile Include="Models\Tractor\Brand.cs" />
     <Compile Include="Models\Tractor\Engine.cs" />
     <Compile Include="Models\Tractor\ItemCollection.cs" />
+    <Compile Include="Models\Tractor\Series.cs" />
     <Compile Include="Models\Tractor\Tractor.cs" />
     <Compile Include="Models\Tractor\TractorCollection.cs" />
     <Compile Include="Models\Tractor\Transmission.cs" />
@@ -84,12 +88,15 @@
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\BaseService.cs" />
+    <Compile Include="Services\Interfaces\ISeriesService.cs" />
     <Compile Include="Services\Interfaces\ITractorService.cs" />
     <Compile Include="Services\Mock\MockTractorService.cs" />
+    <Compile Include="Services\SeriesService.cs" />
     <Compile Include="Services\TractorService.cs" />
     <Compile Include="Utils\TractorUtils.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\BrandsViewModel.cs" />
+    <Compile Include="ViewModels\SeriesViewModel.cs" />
     <Compile Include="ViewModels\TracorGalleryViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

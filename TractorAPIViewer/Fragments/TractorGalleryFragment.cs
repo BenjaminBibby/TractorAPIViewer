@@ -23,8 +23,15 @@ namespace TractorAPIViewer.Fragments
         private TractorRecyclerAdapter _adapter;
         private LinearLayoutManager _layoutManager;
 
+        private int? _seriesId;
+
         public TractorGalleryFragment() : base(Resource.Layout.fragment_tractor_gallery)
         {
+        }
+
+        public TractorGalleryFragment(int seriesId) : this()
+        {
+            _seriesId = seriesId;
         }
 
         public override void OnCreate(Bundle savedInstanceState)
@@ -55,7 +62,9 @@ namespace TractorAPIViewer.Fragments
             vm.OnTractorClicked += TractorClicked;
 
             // Get all tractors from API of the brand "Volvo BM"
-            FetchTractors(Constants.BrandId);
+
+            if(_seriesId != null)
+                FetchTractors(_seriesId.Value);
         }
 
         private void TractorClicked(Tractor obj)
@@ -92,9 +101,9 @@ namespace TractorAPIViewer.Fragments
             await vm.GetTractorAsync(id);
         }
 
-        private async void FetchTractors(int brandId)
+        private async void FetchTractors(int seriesId)
         {
-            await vm.GetTractorsAsync(brandId);
+            await vm.GetTractorsAsync(seriesId);
         }
     }
 }

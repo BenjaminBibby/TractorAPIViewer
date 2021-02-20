@@ -41,5 +41,15 @@ namespace TractorAPIViewer.Services.Mock
                         }
                     }.Items
                 );
+
+        public Task<IEnumerable<Tractor>> GetTractorsFromBrandAsync(int brandId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<Tractor>> GetTractorsFromSeriesAsync(int brandId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
