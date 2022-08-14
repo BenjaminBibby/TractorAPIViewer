@@ -40,7 +40,7 @@ namespace TractorAPIViewer.Adapters
             holder.TvTitle.Text = item.InfoFormatted;
         }
 
-        public override int ItemCount => _holder.VisibleTractors?.Count() ?? 0;
+        public override int ItemCount => _holder?.VisibleTractors?.Count() ?? 0;
 
         public Tractor GetEntry(int position) => _holder?.VisibleTractors?.ElementAt(position);
 

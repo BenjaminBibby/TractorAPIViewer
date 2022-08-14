@@ -43,6 +43,8 @@ namespace TractorAPIViewer.Services
             {
                 Console.WriteLine($"URL: {url}");
 
+                //await Task.Delay(2000);
+
                 HttpResponseMessage response = await _client.GetAsync(url);
 
                 string content = await response.Content.ReadAsStringAsync();

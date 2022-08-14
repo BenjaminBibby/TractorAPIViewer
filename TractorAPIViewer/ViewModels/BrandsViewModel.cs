@@ -23,20 +23,19 @@ namespace TractorAPIViewer.ViewModels
 
         public int BrandCount => Brands?.Count() ?? 0;
 
-        [Inject]
-        public ITractorService tractorService;
+        private ITractorService TractorService { get; }
 
         public event Action<IEnumerable<Brand>> OnBrandsUpdated;
 
-        public BrandsViewModel()
+        [Inject]
+        public BrandsViewModel(ITractorService tractorService)
         {
-            if (tractorService == null)
-                tractorService = App.Container.Get<ITractorService>();
+            TractorService = tractorService;
         }
 
         public async void FetchBrands()
         {
-            Brands = await tractorService?.GetTractorBrandsAsync();
+            Brands = await TractorService?.GetTractorBrandsAsync();
             OnBrandsUpdated?.Invoke(Brands);
         }
 

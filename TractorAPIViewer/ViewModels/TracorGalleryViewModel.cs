@@ -18,7 +18,7 @@ namespace TractorAPIViewer.ViewModels
 {
     public class TracorGalleryViewModel : BaseViewModel, ITractorHolder
     {
-        [Inject] public ITractorService TractorService;
+        public ITractorService TractorService { get; }
 
         public IEnumerable<Tractor> Tractors { get; set; }
         public IEnumerable<Tractor> VisibleTractors { get; set; }
@@ -29,10 +29,10 @@ namespace TractorAPIViewer.ViewModels
         public event Action<Tractor> OnTractorClicked;
         public event Action<IEnumerable<Tractor>> OnTractorsFetched;
 
-        public TracorGalleryViewModel()
+        [Inject]
+        public TracorGalleryViewModel(ITractorService tractorService)
         {
-            if (this.TractorService == null)
-                this.TractorService = App.Container.Get<ITractorService>();
+            TractorService = tractorService;
         }
 
         public async Task<Tractor> GetTractorAsync(int id)

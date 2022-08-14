@@ -260,7 +260,6 @@ C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\bin\Debug\T
 C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\MonoAndroid,Version=v8.1.AssemblyAttributes.cs
 C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\build.props
 C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\adb.props
-C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\TractorAPIViewer.csprojAssemblyReference.cache
 C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\stamp\_BuildLibraryImportsCache.stamp
 C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\res.flag
 C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\lp\0\jl\files.cache
@@ -411,11 +410,14 @@ C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\8
 C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\android\src\crc641b2e3ca20c468b10\BaseAdapter_2.java
 C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\android\src\crc641b2e3ca20c468b10\BrandsAdapter.java
 C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\android\src\crc641b2e3ca20c468b10\BrandsViewHolder.java
+C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\android\src\crc641b2e3ca20c468b10\SeriesAdapter.java
+C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\android\src\crc641b2e3ca20c468b10\SeriesViewHolder.java
 C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\android\src\crc641b2e3ca20c468b10\TractorRecyclerAdapter.java
 C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\android\src\crc641b2e3ca20c468b10\TractorRecyclerAdapterViewHolder.java
 C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\android\src\crc645942c3934b5e66f2\BaseFragment.java
 C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\android\src\crc645942c3934b5e66f2\BaseFragment_1.java
 C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\android\src\crc645942c3934b5e66f2\BrandsFragment.java
+C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\android\src\crc645942c3934b5e66f2\SeriesFragment.java
 C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\android\src\crc645942c3934b5e66f2\TractorGalleryFragment.java
 C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\android\src\crc64b5d1565e32bfb839\MainActivity.java
 C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\android\src\crc64b5d1565e32bfb839\MainApplication.java
@@ -505,6 +507,4 @@ C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\8
 C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\stamp\_GenerateJavaStubs.stamp
 C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\stamp\_ResolveLibraryProjectImports.stamp
-C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\android\src\crc641b2e3ca20c468b10\SeriesAdapter.java
-C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\android\src\crc641b2e3ca20c468b10\SeriesViewHolder.java
-C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\android\src\crc645942c3934b5e66f2\SeriesFragment.java
+C:\Users\benja\Desktop\Bibby\Xamarin\TractorAPICopy\TractorAPIViewer\obj\Debug\81\TractorAPIViewer.csproj.AssemblyReference.cache

@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Ninject;
 
 namespace TractorAPIViewer.ViewModels
 {
@@ -21,6 +22,12 @@ namespace TractorAPIViewer.ViewModels
 
         // Spinner events
         public event Action OnStartSpinner, OnStopSpinner;
+
+        [Inject]
+        public BaseViewModel()
+        {
+
+        }
 
         public void StartSpinner()
         {

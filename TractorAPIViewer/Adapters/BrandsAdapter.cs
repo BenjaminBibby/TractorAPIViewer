@@ -30,12 +30,13 @@ namespace TractorAPIViewer.Adapters
             Action<Brand> clickListener,
             Action<Brand> clickLongListener
             )
-        => CreateViewHolderFromFunc(
-            (v, c, cl) => new BrandsViewHolder(v, c, cl),
-            itemView,
-            clickListener,
-            clickLongListener
-            );
+            => new BrandsViewHolder(itemView, clickListener, clickLongListener);
+        //=> CreateViewHolderFromFunc(
+        //    (v, c, cl) => new BrandsViewHolder(v, c, cl),
+        //    itemView,
+        //    clickListener,
+        //    clickLongListener
+        //    );
     }
 
     public class BrandsViewHolder : BaseAdapterViewHolder<Brand>

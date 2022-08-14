@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ninject;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ namespace TractorAPIViewer.Services
 {
     public class TractorService : ITractorService
     {
+        [Inject]
         public TractorService()
         {
         }

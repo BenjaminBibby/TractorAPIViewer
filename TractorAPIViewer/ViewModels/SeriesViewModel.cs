@@ -17,8 +17,7 @@ namespace TractorAPIViewer.ViewModels
 {
     public class SeriesViewModel : BaseViewModel, ISeriesHolder
     {
-        [Inject]
-        private ISeriesService _seriesService;
+        private ISeriesService SeriesService { get; }
 
         public event Action<IEnumerable<Series>> SeriesUpdated;
 
@@ -33,14 +32,14 @@ namespace TractorAPIViewer.ViewModels
             if (brandId is null)
                 return;
 
-            Series = await _seriesService?.GetSeriesAsync(brandId);
+            Series = await SeriesService?.GetSeriesAsync(brandId);
             SeriesUpdated?.Invoke(Series);
         }
 
-        public SeriesViewModel()
+        [Inject]
+        public SeriesViewModel(ISeriesService seriesService)
         {
-            if (_seriesService is null)
-                _seriesService = App.Container.Get<ISeriesService>();
+            SeriesService = seriesService;
         }
     }
 }
